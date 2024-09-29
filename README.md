@@ -16,7 +16,7 @@ Follow these steps to install and use the extension locally:
 1. **Clone or Download the Repository**:
    - Clone this repository to your local machine:
      ```bash
-     git clone https://github.com/your-username/youtube-focus-mode.git
+     git clone https://github.com/girish-kanjiyani7/youtube-focus-mode.git
      ```
    - Alternatively, download the repository as a ZIP file and extract it.
 
