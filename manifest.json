@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Distraction Blocker",
+  "version": "1.1",
+  "description": "Block YouTube distractions by hiding suggestions, end-screen videos, and recommended sections.",
+  "permissions": ["tabs", "activeTab"],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.webp"
+      
+    }
+  },
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.webp"
+   
+  }
+}
